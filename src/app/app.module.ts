@@ -1,11 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { PlanetComponent } from './planet/planet.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { BuildingsComponent } from './buildings/buildings.component';
+import { MenuComponent } from './menu/menu.component';
+import { NgModule } from '@angular/core';
+import { PlanetComponent } from './planet/planet.component';
+import { ResourceCardComponent } from './resources/resource-card/resource-card.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { ResourcesModule } from './resources/resources.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { BuildingsComponent } from './buildings/buildings.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ResourcesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

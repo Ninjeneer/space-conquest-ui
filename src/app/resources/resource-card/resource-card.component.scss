@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+.resource-card {
+  @apply mr-4 mb-4;
+}
+
+.mine-assign button {
+  display: block;
+  padding: 10px;
+  background-color: $primary-blue;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: $dim-blue;
+    transition-duration: 0.2s;
+  }
+}
