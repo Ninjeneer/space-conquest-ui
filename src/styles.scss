@@ -8,6 +8,7 @@ $primary-blue: #2196f3;
 
 html, body {
   height: 100%;
+  background-color: rgb(39, 39, 39);
 }
 
 .info-container {
@@ -15,11 +16,22 @@ html, body {
   padding: 10px;
   background-color: black;
   color: white;
+  display: inline-flex;
 }
 
 .info-container h1 {
   color: $primary-blue;
   font-size: 1.5rem;
   margin-bottom: 15px;
+}
+
+.title {
+  @apply text-3xl;
+  color: $primary-blue;
+}
+
+.title2 {
+  @apply text-lg;
+  color: $primary-blue;
 }
 

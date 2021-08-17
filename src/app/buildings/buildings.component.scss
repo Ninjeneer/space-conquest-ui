@@ -1,0 +1,70 @@
+@import '../../styles.scss';
+
+.buildings-container {
+  height: 100%;
+}
+
+.building-card {
+  @apply mr-4 mb-4;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.building-card img {
+  width: 50px;
+}
+
+.building-list {
+  height: 50%;
+}
+
+.building-more {
+  height: 50%;
+  border-top: 10px solid #cccccc;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .building-more div:last-of-type {
+    border-top: 10px solid #cccccc;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .building-more div:last-of-type {
+    border-left: 10px solid #cccccc;
+    box-sizing: border-box;
+  }
+}
+
+
+.building-more div {
+  padding: 15px;
+  overflow: auto;
+}
+
+.building-card.active {
+  border: 4px solid $primary-blue;
+}
+
+.building-card.buy {
+  border: 1px dashed #e9b23c;
+  position: relative;
+}
+
+.building-card.buy span {
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  font-size: 0.6rem;
+  background-color: #e9b23c;
+  color: black;
+}

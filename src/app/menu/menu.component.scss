@@ -1,6 +1,9 @@
 @import '../../styles.scss';
 
-li {
+a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
   border: 1px solid $primary-blue;
   color: $primary-blue;
   padding: 10px;
@@ -12,4 +15,14 @@ li {
     font-weight: bold;
     transition-duration: 0.5s;
   }
+
+  &:visited {
+    color: $primary-blue;
+  }
+}
+
+a.active {
+  background-color: $primary-blue;
+  color: white;
+  font-weight: bold;
 }
