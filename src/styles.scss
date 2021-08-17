@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+$primary-blue: #2196f3;
+
+
+html, body {
+  height: 100%;
+}
+
+.info-container {
+  border: 1px solid $primary-blue;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.info-container h1 {
+  color: $primary-blue;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+

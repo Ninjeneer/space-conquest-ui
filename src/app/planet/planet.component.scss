@@ -1,0 +1,8 @@
+@import '../../styles.scss';
+
+.planet-container {
+  @apply p-10;
+  background-image: url('../../assets/space.png');
+  background-repeat: no-repeat;
+  color: white;
+}

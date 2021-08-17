@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+li {
+  border: 1px solid $primary-blue;
+  color: $primary-blue;
+  padding: 10px;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: $primary-blue;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.5s;
+  }
+}
