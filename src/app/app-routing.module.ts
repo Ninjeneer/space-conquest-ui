@@ -6,9 +6,9 @@ import { PlanetComponent } from './planet/planet.component';
 import { ResourcesComponent } from './resources/resources.component';
 
 const routes: Routes = [
-  { path: 'planet', component: PlanetComponent },
-  { path: 'buildings', component: BuildingsComponent },
-  { path: 'resources', component: ResourcesComponent }
+  { path: 'planet', loadChildren: () => import('./planet/planet.module').then(m => m.PlanetModule) },
+  { path: 'buildings', loadChildren: () => import('./buildings/buildings.module').then(m => m.BuildingsModule) },
+  { path: 'resources', loadChildren: () => import('./resources/resources.module').then(m => m.ResourcesModule) }
 ];
 
 @NgModule({

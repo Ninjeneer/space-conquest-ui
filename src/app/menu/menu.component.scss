@@ -15,10 +15,6 @@ a {
     font-weight: bold;
     transition-duration: 0.5s;
   }
-
-  &:visited {
-    color: $primary-blue;
-  }
 }
 
 a.active {

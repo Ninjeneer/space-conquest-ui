@@ -1,21 +1,19 @@
 import { RouterModule, Routes } from '@angular/router';
 
+import { BuildingsComponent } from './buildings.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ResourceCardComponent } from './resource-card/resource-card.component';
-import { ResourcesComponent } from './resources.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ResourcesComponent
+    component: BuildingsComponent
   }
 ];
 
 @NgModule({
   declarations: [
-    ResourcesComponent,
-    ResourceCardComponent
+    BuildingsComponent
   ],
   imports: [
     CommonModule,
@@ -25,4 +23,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class ResourcesModule { }
+export class BuildingsModule { }
